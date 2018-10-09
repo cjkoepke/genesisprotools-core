@@ -13,7 +13,7 @@
             "email": "hello@calvinkoepke.com"
         }
     ],
-	"scripts": [
+	"scripts": {
 		"build-theme": "@php /core/scripts/function.php"
-	]
+	}
 }

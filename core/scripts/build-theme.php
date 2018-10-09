@@ -5,4 +5,4 @@ if ( ! function_exists( 'shell_exec' ) ) {
 	die;
 }
 
-shell_exec( __DIR__ . '/shell/functions.sh' );
+shell_exec( __DIR__ . '/bin/bash /shell/functions.sh ' . get_stylesheet_directory() );
