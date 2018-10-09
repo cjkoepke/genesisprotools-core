@@ -44,8 +44,8 @@ final class GenesisProTools {
 		$theme = \wp_get_theme();
 
 		// Core paths.
-		define( 'UNO_CORE_PATH',       __DIR__                                   );
-		define( 'UNO_CORE_URL',        \get_stylesheet_directory_uri() . '/core' );
+		define( 'GPT_CORE_PATH',       \plugin_dir_path( __DIR__ )               );
+		define( 'GPT_CORE_URL',        \plugin_dir_url( __DIR__ )                );
 		define( 'CHILD_ROOT_PATH',     \get_stylesheet_directory()               );
 		define( 'CHILD_ROOT_URL',      \get_stylesheet_directory_uri()           );
 		define( 'CHILD_VENDOR_PATH',   CHILD_ROOT_PATH . '/vendor'               );

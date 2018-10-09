@@ -12,5 +12,8 @@
             "name": "Calvin Koepke",
             "email": "hello@calvinkoepke.com"
         }
-    ]
+    ],
+	"scripts": [
+		"build-theme": "@php /core/scripts/function.php"
+	]
 }
