@@ -5,6 +5,7 @@
     "require": {
         "a7/autoload": "2.0.9.1"
     },
+	"minimum-stability": "beta",
     "license": "proprietary",
     "authors": [
         {
