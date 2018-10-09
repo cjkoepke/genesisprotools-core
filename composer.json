@@ -1,0 +1,15 @@
+{
+    "name": "gpt/core",
+    "description": "The core composer package for Genesis Pro Tools.",
+    "type": "library",
+    "require": {
+        "a7/autoload": "2.0.9.1"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Calvin Koepke",
+            "email": "hello@calvinkoepke.com"
+        }
+    ]
+}
