@@ -3,7 +3,7 @@
     "description": "The core composer package for Genesis Pro Tools.",
     "type": "library",
     "require": {
-        "a7/autoload": "2.0.9.1"
+        "a7/autoload": "^2.0"
     },
 	"minimum-stability": "dev",
     "license": "proprietary",
@@ -12,8 +12,5 @@
             "name": "Calvin Koepke",
             "email": "hello@calvinkoepke.com"
         }
-    ],
-	"scripts": {
-		"build-theme": "@php /core/scripts/function.php"
-	}
+    ]
 }
