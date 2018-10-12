@@ -16,7 +16,7 @@ var pkg     = require('./package');
  */
 toolkit.extendConfig({
 	theme: {
-		name: pkg.name,
+		name: pkg.themename,
 		homepage: pkg.homepage,
 		description: pkg.description,
 		author: pkg.author,
