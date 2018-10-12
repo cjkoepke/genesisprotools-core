@@ -1,0 +1,19 @@
+/**
+ * Content
+ */
+
+
+/* Entries
+-------------------------------------- */
+
+.entry {
+	background: $color-bg-entry;
+	border-radius: $radius;
+	
+	margin-bottom: 1.6rem;
+	padding: 5%;
+	
+	@include respond-to('m') {
+		padding: $space-entry;
+	}
+}

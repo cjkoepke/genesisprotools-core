@@ -1,0 +1,43 @@
+/**
+ * Main
+ */
+
+
+// Helpers
+@import 'helpers/bourbon/bourbon'; 	// mixin library
+@import 'helpers/utilities'; 		// custom mixins and functions
+
+// Variables
+@import 'variables';
+
+// Base
+@import 'theme/reset';
+@import 'theme/accessibility';
+@import 'theme/typography';
+@import 'theme/forms';
+@import 'theme/buttons';
+
+// Layout
+@import 'theme/layout'; 			
+//@import 'theme/navigation'; 		// header menu, footer menu, mobile menu
+//@import 'theme/header';
+@import 'theme/sidebar';
+//@import 'theme/footer';
+
+// Content
+@import 'theme/content';
+//@import 'theme/comments';
+//@import 'theme/genesis'; 			// breadcrumbs, archive title, author box
+@import 'theme/media'; 				// images, objects, iframes
+@import 'theme/tables';
+//@import 'theme/wordpress';
+
+// Plugins
+//@import 'plugins/genesis-enews';	// Genesis eNews Extended (https://wordpress.org/plugins/genesis-enews-extended/)
+//@import 'plugins/genesis-faq';		// Genesis Simple FAQ (https://wordpress.org/plugins/genesis-simple-faq/)
+//@import 'plugins/jetpack';			// Jetpack (https://wordpress.org/plugins/jetpack/)
+//@import 'plugins/woocommerce';		// WooCommerce (https://wordpress.org/plugins/woocommerce/)
+
+// Custom Page Templates
+//@import 'templates/home';			// front-page.php
+//@import 'templates/custom';			// page_custom.php

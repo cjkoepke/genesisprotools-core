@@ -1,0 +1,83 @@
+/**
+ * Forms
+ */
+
+
+/* Defaults
+-------------------------------------- */
+
+input,
+select,
+textarea {
+	background-color: $color-white;
+	color: $color-text;
+	
+	border: 0.1rem solid $color-grey-20;
+	border-radius: $radius;
+	
+	@include type-set('xs');
+	
+	padding: 1.2rem 1.6rem;
+	
+	width: 100%;
+	
+	&:focus {
+		border: 0.1rem solid $color-primary;
+		outline: none;
+	}
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+input:not( [type="checkbox" ] ),
+input:not( [type="image"] ),
+input:not( [type="radio"] ) {
+	-webkit-appearance: none; /* Remove iOS styles */
+}
+
+::-moz-placeholder {
+	color: $color-text-tint;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: $color-text-tint;
+}
+
+/* Search form
+-------------------------------------- */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+.search-form {
+	overflow: hidden;
+}
+
+.site-header .search-form {
+	float: right;
+}
+
+.entry-content,
+.site-header {
+	.search-form {
+		width: 50%;
+	}
+}
+
+.genesis-nav-menu .search input[type="submit"],
+.widget_search input[type="submit"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}

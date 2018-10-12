@@ -1,0 +1,140 @@
+/**
+ * Typography
+ */
+
+/* Defaults
+-------------------------------------- */
+
+html {
+    font-size: 62.5%; // 10px browser default.
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+body > div {
+	@include type-set('xs');
+}
+
+body {
+	background-color: $color-bg-body;
+	color: $color-text-body;
+	
+	font-family: $font-body;
+	font-weight: $normal;
+	@include type-set('xs');
+}
+
+a {
+	color: $color-links;
+	
+	text-decoration: underline;
+	transition: $transition;
+	
+	&:hover,
+	&:focus {
+		color: $color-links-hover;
+	}
+}
+
+p,
+ol,
+ul {
+	margin: 0 0 $base-line;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: $border;
+	
+	clear: both;
+	
+	margin: 1em 0;
+}
+
+b,
+strong {
+	font-weight: $bold;
+}
+
+blockquote,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+mark {
+	background: $color-grey-10;
+	color: $color-text;
+}
+
+
+/* Blockquotes
+-------------------------------------- */
+
+blockquote {
+	margin: $base-line*1.5 0;
+	padding-left: 3.2rem;
+}
+
+blockquote::before {
+	@include type-set('xxl');
+	
+	content: "\201C";
+	
+	display: block;
+	position: relative;
+	
+	height: 0;
+	
+	top: -12px;
+	left: -40px;
+}
+
+
+/* Headings
+-------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-heading;
+	font-weight: $bold;
+	margin: 0 0 $base-line;
+}
+
+h1 {
+	@include type-set('xxl');
+}
+
+h2 {
+	@include type-set('xl');
+}
+
+h3 {
+	@include type-set('m');
+}
+
+h4 {
+	@include type-set('s');
+}
+
+h5 {
+	@include type-set('xs');
+}
+
+h6 {
+	@include type-set('xs');
+}
+
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin-top: $base-line*1.5;
+}
