@@ -40,7 +40,7 @@ toolkit.extendConfig({
 		remmediaquery: true,
 		scss: {
 			'style': {
-				src: 'assets/styles/main.scss',
+				src: 'assets/scss/style.scss',
 				dest: './',
 				outputStyle: 'compressed'
 			}
@@ -48,11 +48,8 @@ toolkit.extendConfig({
 	},
 	js: {
 		'theme' : [
-			'assets/js/theme/*.js'
+			'assets/js/*.js'
 		],
-		'standalone' : [
-			'assets/scss/*.scss'
-		]
 	},
 	dest: {
 		i18npo: 'dist/languages/',
@@ -60,10 +57,7 @@ toolkit.extendConfig({
 		images: 'dist/images/',
 		css: 'dist/css',
 		js: 'dist/js'
-	},
-	// server: {
-	// 	url: example.dev
-	// }
+	}
 });
 
 toolkit.extendTasks(gulp);
