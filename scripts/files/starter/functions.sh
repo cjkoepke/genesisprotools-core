@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cat > functions.php << EOL
 <?php
 /**
