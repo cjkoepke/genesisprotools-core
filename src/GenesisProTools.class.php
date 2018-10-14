@@ -1,4 +1,7 @@
 <?php
+
+namespace GPT\Core;
+
 /**
  * Setup the GPT master class. This includes all the basic
  * helper functions, files, and libraries the in the Genesis Pro Tools package.
