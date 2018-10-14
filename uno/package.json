@@ -1,0 +1,16 @@
+{
+	"name": "uno",
+	"themename": "Uno",
+	"homepage": "https://genesisprotools.com/uno",
+	"version": "1.0.0",
+	"description": "A free, powerful, developer boilerplate for WordPress theme builders who use the Genesis Framework.",
+	"template": "genesis",
+	"main": "index.js",
+	"repository": "git@github.com:cjkoepke/uno.git",
+	"author": "Genesis Pro Tools",
+	"license": "AGPL-3.0",
+	"devDependencies": {
+		"gulp": "3.9.1",
+		"gulp-wp-toolkit": "^2.1.0"
+	}
+}

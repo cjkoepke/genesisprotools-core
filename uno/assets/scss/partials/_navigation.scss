@@ -1,0 +1,263 @@
+.genesis-nav-menu {
+	clear: both;
+	line-height: 1;
+
+	@media only screen and (min-width: $break-large) {
+		clear: both;
+		line-height: 1;
+		text-align: left;
+	}
+
+	.menu-item {
+		display: block;
+		position: relative;
+		text-align: right;
+
+		@media only screen and (min-width: $break-large) {
+			display: inline-block;
+			position: relative;
+			text-align: left;
+		}
+
+		> a {
+			padding: 20px;
+		}
+	}
+
+	a {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		padding: 20px 10px;
+		text-align: left;
+
+		@media only screen and (min-width: $break-large) {
+			border-bottom: 0;
+			display: block;
+			padding: 20px;
+		}
+	}
+
+	> .menu-item > a {
+		@media only screen and (min-width: $break-large) {
+			padding: 20px;
+		}
+	}
+
+	// Sub Menus
+	.sub-menu {
+		display: none;
+
+		@media only screen and (min-width: $break-large) {
+			display: none;
+			left: 0;
+			margin-left: 0;
+			position: absolute;
+			width: 200px;
+			z-index: 99;
+
+			a,
+			.menu-item {
+				display: block;
+			}
+
+			.menu-item-has-children:hover > .sub-menu {
+				display: block;
+				left: auto;
+			}
+		}
+
+		a {
+			font-size: .8em;
+			padding-left: 40px;
+			word-wrap: break-word;
+
+			@media only screen and (min-width: $break-large) {
+				background: #fff;
+				border: 1px solid #ddd;
+				border-top: 0;
+				padding: 20px;
+				word-wrap: break-word;
+			}
+		}
+
+		> .menu-item:first-child {
+			@media only screen and (min-width: $break-large) {
+				border-top: 1px solid #ddd;
+			}
+		}
+
+		.sub-menu {
+			@media only screen and (min-width: $break-large) {
+				margin: -1px 0 0 198px;
+				top: 0;
+			}
+			a {
+				padding-left: 60px;
+
+				@media only screen and (min-width: $break-large) {
+					padding: 20px;
+				}
+			}
+		}
+	}
+}
+
+// Primary Navigation
+@media only screen and (min-width: $break-large) {
+	.nav-primary {
+		background: #fff;
+		border-bottom: 1px solid #ddd;
+
+		> .wrap {
+			max-width: 1240px;
+			padding: 0 40px;
+		}
+	}
+}
+
+@media only screen and (min-width: $break-large) {
+	.nav-primary,
+	.admin-bar .nav-primary {
+		display: block;
+		height: auto;
+		overflow: visible;
+		padding: 0;
+		position: static;
+	}
+}
+
+// Secondary Navigation
+@media only screen and (min-width: $break-large) {
+	.nav-secondary {
+		border-bottom: 1px solid $colorLight;
+		font-size: .8em;
+		font-style: italic;
+
+		> .wrap {
+			max-width: 1240px;
+			padding: 0 40px;
+		}
+	}
+}
+
+// Responsive Menu
+@media only screen and (min-width: $responsive-menu-break) {
+	.genesis-responsive-menu {
+		display: block;
+		visibility: visible;
+	}
+	.menu-toggle,
+	.sub-menu-toggle {
+		display: none;
+		visibility: hidden;
+	}
+
+	.menu .menu-item:focus {
+		position: static;
+	}
+
+	.menu .menu-item > a:focus + ul.sub-menu,
+	.menu .menu-item.sfHover > ul.sub-menu {
+		left: auto;
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: $responsive-menu-break) {
+	.genesis-responsive-menu {
+		display: none;
+		position: relative;
+
+		> .wrap {
+			padding: 0;
+		}
+
+		.genesis-nav-menu {
+			.sub-menu {
+				border: none;
+				clear: both;
+				display: none;
+				margin: 0;
+				opacity: 1;
+				position: static;
+				width: 100%;
+			}
+
+			.menu-item {
+				display: block;
+				float: none;
+				position: relative;
+				text-align: left;
+
+				a {
+				 	margin-bottom: 1px;
+				 	padding: 15px 20px;
+				 	width: 100%;
+
+					&:focus,
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+
+				.sub-menu a {
+					padding-left: 25px;
+				}
+			}
+		}
+	}
+
+	.genesis-skip-link .skip-link-hidden {
+		display: none;
+		visibility: hidden;
+
+		@media only screen and (min-width: $responsive-menu-break) {
+			display: block;
+			visibility: visible;
+		}
+	}
+
+	.menu-toggle,
+	.sub-menu-toggle {
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+		text-align: center;
+		visibility: visible;
+	}
+
+	.menu-toggle {
+		line-height: 20px;
+		position: relative;
+		z-index: 1000;
+		width: 100%;
+
+		&::before {
+			font-size: 1.5em;
+			margin-right: 10px;
+			line-height: inherit;
+			text-rendering: auto;
+			vertical-align: bottom;
+		}
+	}
+
+	.sub-menu-toggle {
+		float: right;
+		padding: 10px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+
+		&::before {
+			display: inline-block;
+			text-rendering: auto;
+			transform: rotate(0);
+			transition: transform .25s ease-in-out;
+		}
+
+		&.activated::before {
+			transform: rotate(180deg);
+		}
+	}
+}
