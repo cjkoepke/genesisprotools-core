@@ -12,5 +12,8 @@
             "name": "Calvin Koepke",
             "email": "hello@calvinkoepke.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": { "": "src/" }
+    }
 }
