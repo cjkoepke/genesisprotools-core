@@ -23,7 +23,7 @@ toolkit.extendConfig({
 		version: pkg.version,
 		license: pkg.license,
 		template: pkg.template,
-		textdomain: pkg.name.toLowerCase()
+		textdomain: pkg.name
 	},
 	src: {
 		php: ['**/*.php', '!vendor/**'],
