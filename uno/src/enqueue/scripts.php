@@ -9,13 +9,13 @@
  * @since      1.0.0
  */
 
-add_action( 'wp_enqueue_scripts', 'gpt_load_scripts' );
+add_action( 'wp_enqueue_scripts', 'uno_load_scripts' );
 /**
  * Load compiled theme scripts.
  *
  * @since 1.0.0
  */
-function gpt_load_scripts() {
+function uno_load_scripts() {
 
 	// Load scripts here.
 	$ext = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
