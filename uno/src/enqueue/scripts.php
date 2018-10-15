@@ -25,9 +25,9 @@ function uno_load_scripts() {
 		'uno-responsive-menu',
 		'genesis_responsive_menu',
 		array(
-			'mainMenu'         => __( 'Menu', calvin ),
+			'mainMenu'         => __( 'Menu', 'uno' ),
 			'menuIconClass'    => 'dashicons-before dashicons-menu',
-			'subMenu'          => __( 'Menu', calvin ),
+			'subMenu'          => __( 'Menu', 'uno' ),
 			'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
 			'menuClasses'      => array(
 				'combine' => array(
