@@ -6,7 +6,7 @@
         "a7/autoload": "^2.0"
     },
 	"minimum-stability": "dev",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Calvin Koepke",
