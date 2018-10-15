@@ -4,20 +4,20 @@
  *
  * @package    Genesis Pro Tools
  * @author     Calvin Koepke <hello@calvinkoepke.com>
- * @license    https://www.apache.org/licenses/LICENSE-2.0 Apache 2.0
  * @version    1.0.0
  * @link       https://genesisprotools.com
  * @since      1.0.0
  */
 
-add_action( 'wp_enqueue_scripts', 'gpt_load_styles' );
+add_action( 'wp_enqueue_scripts', 'uno_load_styles' );
 /**
  * Load compiled theme styles.
  *
- * @since 0.0.1
+ * @since 1.0.0
  */
-function gpt_load_styles() {
+function uno_load_styles() {
 
 	// Load additional styles here.
+	wp_enqueue_style( 'dashicons' );
 
 }

@@ -3,18 +3,18 @@
  *
  * @author StudioPress
  * @link https://github.com/copyblogger/responsive-menus
- * @version 1.1.2
+ * @version 1.1.3
  * @license GPL-2.0+
  */
-
-var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? '' : genesis_responsive_menu,
-	genesisMenusUnchecked  = genesisMenuParams.menuClasses,
-	genesisMenus           = {},
-	menusToCombine         = [];
 
 ( function ( document, $, undefined ) {
 
 	'use strict';
+
+	var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? '' : genesis_responsive_menu,
+		genesisMenusUnchecked  = genesisMenuParams.menuClasses,
+		genesisMenus           = {},
+		menusToCombine         = [];
 
 	/**
 	 * Validate the menus passed by the theme with what's being loaded on the page,
@@ -96,15 +96,13 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 				menu : $( '<button />', {
 					'class' : mainMenuButtonClass,
 					'aria-expanded' : false,
-					'aria-pressed' : false,
-					'role' : 'button'
+					'aria-pressed' : false
 					} )
 					.append( genesisMenuParams.mainMenu ),
 				submenu : $( '<button />', {
 					'class' : subMenuButtonClass,
 					'aria-expanded' : false,
-					'aria-pressed' : false,
-					'role' : 'button'
+					'aria-pressed' : false
 					} )
 					.append( $( '<span />', {
 						'class' : 'screen-reader-text',
@@ -326,7 +324,7 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 			.attr( 'aria-expanded', false )
 			.attr( 'aria-pressed', false );
 
-		$( '.' + responsiveMenuClass + ', ' + responsiveMenuClass + ' .sub-menu' )
+		$( '.' + responsiveMenuClass + ', .' + responsiveMenuClass + ' .sub-menu' )
 			.attr( 'style', '' );
 	}
 

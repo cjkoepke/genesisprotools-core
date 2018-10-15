@@ -4,7 +4,6 @@
  *
  * @package    Genesis Pro Tools
  * @author     Calvin Koepke <hello@calvinkoepke.com>
- * @license    https://www.apache.org/licenses/LICENSE-2.0 Apache 2.0
  * @version    1.0.0
  * @link       https://genesisprotools.com
  * @since      1.0.0
