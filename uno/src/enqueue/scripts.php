@@ -22,26 +22,24 @@ function gpt_load_scripts() {
 
 	wp_enqueue_script( 'uno-theme-js', CHILD_JS_URL . "/theme${ext}.js", array('jquery'), CHILD_THEME_VERSION, true );
 	wp_localize_script(
+		'uno-responsive-menu',
+		'genesis_responsive_menu',
 		array(
-			'uno-responsive-menu',
-			'genesis_responsive_menu',
-			array(
-				'mainMenu'         => __( 'Menu', 'uno' ),
-				'menuIconClass'    => 'dashicons-before dashicons-menu',
-				'subMenu'          => __( 'Menu', 'uno' ),
-				'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
-				'menuClasses'      => array(
-					'combine' => array(
-						'.nav-primary',
-						'.nav-header',
-						'.nav-secondary',
-					),
-					'others'  => array(
-						'.nav-footer',
-						'.nav-sidebar',
-					),
+			'mainMenu'         => __( 'Menu', calvin ),
+			'menuIconClass'    => 'dashicons-before dashicons-menu',
+			'subMenu'          => __( 'Menu', calvin ),
+			'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
+			'menuClasses'      => array(
+				'combine' => array(
+					'.nav-primary',
+					'.nav-header',
+					'.nav-secondary',
 				),
-			);
+				'others'  => array(
+					'.nav-footer',
+					'.nav-sidebar',
+				),
+			),
 		)
 	);
 
