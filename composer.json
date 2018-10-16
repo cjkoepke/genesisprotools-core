@@ -2,10 +2,11 @@
     "name": "gpt/core",
     "description": "The core composer package for Genesis Pro Tools.",
     "type": "library",
+    "version": "0.1.0",
     "require": {
         "a7/autoload": "^2.0"
     },
-	"minimum-stability": "dev",
+	"minimum-stability": "beta",
     "license": "MIT",
     "authors": [
         {
