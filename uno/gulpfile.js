@@ -28,7 +28,7 @@ toolkit.extendConfig({
 	src: {
 		php: ['**/*.php', '!vendor/**'],
 		images: 'assets/images/**/*',
-		scss: 'assets/styles/**/*.scss',
+		scss: 'assets/scss/**/*.scss',
 		css: ['**/*.css', '!node_modules/**', '!assets/vendor/**'],
 		js: ['assets/js/**/*.js', '!node_modules/**'],
 		json: ['**/*.json', '!node_modules/**'],
