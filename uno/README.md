@@ -1,20 +1,17 @@
-# Genesis Starter Theme
-
+# Uno Starter Theme
 A starter framework for Genesis child themes which includes starter SCSS files and a Gulp task file which automates:
 
 1. JS compression
 2. SCSS compiling and compression
 3. File watching
 4. Generation of a POT file for translation
-5. Automatic zipping of the theme without including the development files.
-
-- <a href="#installation">Installation/Initiation Instructions</a>
-- <a href="#optional-commands">Optional Gulp Commands</a>
+5. Autoloading directories
+6. Composer support
 
 <hr/>
 
-## About Starter
-Starter is a project by Calvin Koepke, a frontend designer currently working at Rainmaker Digital.
+## About Uno
+Uno is the official starter child theme by Genesis Pro Tools.
 The goal of the project is to create a starter theme for Genesis Framework developers that doesn't over-bloat their starting base, while including commonly used templates, codes, and styles, and which includes common Gulp development tasks.
 
 Useful Links:
