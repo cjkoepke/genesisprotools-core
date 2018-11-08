@@ -1,10 +1,10 @@
-@import 'variables/var-units';
-@import 'variables/var-type';
-@import 'variables/var-color';
+@import 'variables/*';
+@import 'mixins/*';
 
 @import 'partials/reset';
-@import 'partials/structures';
-@import 'partials/defaults';
+@import 'partials/structure';
+@import 'partials/header';
+@import 'partials/grid';
 @import 'partials/type';
 @import 'partials/objects';
 @import 'partials/tables';

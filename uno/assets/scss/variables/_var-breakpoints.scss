@@ -1,0 +1,11 @@
+$break-small:  600px  !default;
+$break-medium: 768px  !default;
+$break-large:  1200px !default;
+$break-xlarge: 1400px !default;
+
+$breakpoints: (
+	sm: '#{$break-small}',
+	md: '#{$break-medium}',
+	lg: '#{$break-large}',
+	xl: '#{$break-xlarge}'
+);

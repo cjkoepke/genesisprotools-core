@@ -1,6 +1,3 @@
-
-/*----------  Tables  ----------*/
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -10,7 +7,7 @@ table {
 }
 
 tbody {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $colorLight;
 }
 
 td,
@@ -19,7 +16,7 @@ th {
 }
 
 td {
-	border-top: 1px solid #ddd;
+	border-top: 1px solid $colorLight;
 	padding: 6px 0;
 }
 

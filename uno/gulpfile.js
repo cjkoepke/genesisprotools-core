@@ -35,9 +35,9 @@ toolkit.extendConfig({
 		i18n: 'assets/languages/'
 	},
 	css: {
-		basefontsize: 16,
-		remreplace: false,
-		remmediaquery: true,
+		basefontsize: 10,
+		remreplace: true,
+		remmediaquery: false,
 		scss: {
 			'style': {
 				src: 'assets/scss/style.scss',

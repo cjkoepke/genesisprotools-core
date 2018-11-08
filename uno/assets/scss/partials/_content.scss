@@ -1,31 +1,23 @@
-
-
-/*=====================================
-=            Content Areas            =
-=====================================*/
-
-/*----------  Entries  ----------*/
-
-.content .entry:first-of-type .entry-title {
-	margin-top: 0;
+.content {
+	.entry:first-of-type .entry-title {
+		margin-top: 0;
+	}
 }
 
-.entry {
+.entry-content {
 	text-rendering: optimizeLegibility;
-}
 
-.entry-content code {
-	background-color: #ddd;
+	code {
+		background-color: $colorUltraLight;
+		border: 1px solid $colorLight;
+		padding: 3px;
+	}
 }
-
-/*----------  Entry Meta  ----------*/
 
 p.entry-meta {
 	font-size: .8em;
 	font-style: italic;
 }
-
-/*----------  Comments  ----------*/
 
 .comment-header {
 	margin-bottom: 20px;
@@ -39,6 +31,10 @@ p.entry-meta {
 .comment .avatar {
 	float: left;
 	margin: 0 10px 0 0;
+
+	@include breakpoint-up( md ) {
+		margin-right: 24px;
+	}
 }
 
 .says,
@@ -60,18 +56,19 @@ li.comment > article {
 
 ul.children {
 	margin-left: 10px;
+
+	@include breakpoint-up( md ) {
+		margin-left: 40px;
+	}
 }
 
 .comment-reply-title > small,
 .logged-in-as {
 	font-family: $fontBody;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-style: italic;
 	font-weight: normal;
 }
-
-/*----------  Pagination  ----------*/
 
 .pagination {
 	overflow: hidden;
@@ -99,34 +96,14 @@ ul.children {
 	.pagination-previous {
 		display: block;
 		width: 100%;
-	}
-}
 
-/*=====================================
-=            Media Queries            =
-=====================================*/
-
-/*----------  768  ----------*/
-
-@media screen and (min-width: 768px) {
-
-	/* Comments */
-	.comment .avatar {
-		margin-right: 24px;
-	}
-
-	ul.children {
-		margin-left: 40px;
-	}
-
-	/* Pagination */
-	.pagination {
-		.pagination-next,
-		.pagination-previous {
+		@include breakpoint-up( md ) {
 			display: inline-block;
 			width: auto;
 		}
+	}
 
+	@include breakpoint-up( md ) {
 		.pagination-next {
 			float: right;
 		}

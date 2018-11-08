@@ -1,15 +1,5 @@
-
-
-/*======================================
-=            Genesis Classes            =
-======================================*/
-
-/*----------  Archive/Author Box  ----------*/
-
 .archive-description,
 .author-box {
-	border-bottom: 1px solid #ddd;
-	border-top: 1px solid #ddd;
     padding: 40px 0;
 
     p:last-child {
@@ -25,36 +15,23 @@
 		margin: 0 0 24px 24px;
 		max-width: 70px;
 	}
-}
 
-.archive-description {
-	margin: 0 0 40px;
-}
-
-/*----------  Breadcrumbs  ----------*/
-
-.breadcrumb {
-	font-size: .8em;
-	font-style: italic;
-	margin-bottom: 20px;
-}
-
-
-/*=====================================
-=            Media Queries            =
-=====================================*/
-
-/*----------  768  ----------*/
-
-@media screen and (min-width: 768px) {
-
-	.author-box {
+	@include breakpoint-up( md ) {
 		font-size: 18px;
-		font-size: 1.8rem;
 
 		.avatar {
 			max-width: 100%;
 		}
 	}
 
+}
+
+.archive-description {
+	margin: 0 0 40px;
+}
+
+.breadcrumb {
+	font-size: .8em;
+	font-style: italic;
+	margin-bottom: 20px;
 }

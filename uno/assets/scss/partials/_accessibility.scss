@@ -1,9 +1,3 @@
-/*=====================================
-=            Accessibility            =
-=====================================*/
-
-/*----------  Screen Reader Text  ----------*/
-
 .screen-reader-text,
 .screen-reader-text span,
 .screen-reader-shortcut {
@@ -34,10 +28,8 @@
 }
 
 .more-link {
-    position: relative;
+	position: relative;
 }
-
-/*----------  Skip Links  ----------*/
 
 .genesis-skip-link {
 	margin: 0;

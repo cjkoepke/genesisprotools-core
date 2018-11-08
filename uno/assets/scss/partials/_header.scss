@@ -1,0 +1,23 @@
+.site-header {
+	background: #fff;
+	width: 100%;
+
+	> .wrap {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 10px;
+
+		@include breakpoint-up( lg ) {
+			padding: 40px;
+		}
+	}
+
+	.admin-bar & {
+		top: 46px;
+	}
+}
+
+.title-area {
+	max-width: 70%;
+}

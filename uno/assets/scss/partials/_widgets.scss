@@ -1,8 +1,30 @@
-/*===============================
-=            Widgets            =
-===============================*/
+.widget {
+	word-wrap: break-word;
 
-/*----------  Header Widget Area  ----------*/
+	ol > li {
+		list-style-position: inside;
+		list-style-type: decimal;
+		padding-left: 20px;
+		text-indent: -20px;
+	}
+
+	li li {
+		border: 0;
+		margin: 0 0 0 30px;
+		padding: 0;
+	}
+}
+
+.widget_calendar {
+	table {
+		width: 100%;
+	}
+
+	th,
+	td {
+		text-align: center;
+	}
+}
 
 .header-widget-area {
 	display: none;
@@ -10,21 +32,30 @@
 	width: 100%;
 }
 
-/*----------  Sidebar Widgets  ----------*/
-
 .sidebar .widget {
 	margin-bottom: 40px;
 }
 
-/*=====================================
-=            Media Queries            =
-=====================================*/
+.footer-widgets {
+	clear: both;
+	overflow: hidden;
+	padding: 40px 10px;
 
-/*----------  768  ----------*/
+	@include breakpoint-up( md ) {
+		padding-left: 40px;
+		padding-right: 40px;
 
-@media screen and (min-width: 768px) {
+		@include breakpoint-up( lg ) {
+			margin-top: 40px;
+		}
+	}
 
-	/* Footer Widgets */
+	.widget {
+		margin-bottom: 40px;
+	}
+}
+
+@include breakpoint-up( md ) {
 	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3 {
@@ -36,21 +67,11 @@
 	.footer-widgets-1 {
 		margin-left: 0;
 	}
-
 }
 
-/*----------  1200  ----------*/
-
-@media screen and (min-width: 1200px) {
-
-	/* Widget Areas */
+@include breakpoint-up( lg ) {
 	.sidebar,
 	.header-widget-area {
 		display: block;
 	}
-
-	.footer-widgets {
-		margin-top: 40px;
-	}
-
 }

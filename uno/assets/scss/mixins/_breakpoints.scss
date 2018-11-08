@@ -1,0 +1,21 @@
+@mixin breakpoint-up( $breakpoint ) {
+	@if ( map_has_key( $breakpoints, $breakpoint ) ) {
+		@media ( min-width: map_get( $breakpoints, $breakpoint ) ) {
+			@content;
+		}
+	}
+	@else {
+		@debug 'No breakpoint found for ' + $breakpoint;
+	}
+}
+
+@mixin breakpoint-down( $breakpoint ) {
+	@if ( map_has_key( $breakpoints, $breakpoint ) ) {
+		@media ( max-width: map_get( $breakpoints, $breakpoint ) ) {
+			@content;
+		}
+	}
+	@else {
+		@debug 'No breakpoint found for ' + $breakpoint;
+	}
+}

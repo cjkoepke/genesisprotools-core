@@ -1,6 +1,6 @@
 {
-	"name": "uno",
-	"themename": "Uno",
+	"name": "gpt",
+	"themename": "Genesis Pro Tools",
 	"homepage": "https://genesisprotools.com/uno",
 	"version": "1.0.1",
 	"description": "A free, powerful, developer boilerplate for WordPress theme builders who use the Genesis Framework.",
@@ -11,6 +11,6 @@
 	"license": "AGPL-3.0",
 	"devDependencies": {
 		"gulp": "3.9.1",
-		"gulp-wp-toolkit": "^2.1.0"
+		"gulp-wp-toolkit": "^2.1"
 	}
 }

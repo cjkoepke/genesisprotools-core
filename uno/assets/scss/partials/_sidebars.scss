@@ -1,22 +1,4 @@
-
-/*================================
-=            Sidebars            =
-================================*/
-
-.sidebar {
-	display: none;
-}
-
-/*=====================================
-=            Media Queries            =
-=====================================*/
-
-/*----------  1200  ----------*/
-
-@media screen and (min-width: 1200px) {
-
-	/* Primary Sidebar */
-
+@include breakpoint-up( lg ) {
 	.sidebar-primary {
 		float: right;
 		width: 320px;
@@ -30,8 +12,6 @@
 		}
 	}
 
-	/* Secondary Sidebar */
-
 	.sidebar-secondary {
 		float: left;
 		width: 180px;
@@ -40,5 +20,4 @@
 	.content-sidebar-sidebar .sidebar-secondary {
 		float: right;
 	}
-
 }

@@ -1,7 +1,9 @@
-//* Text
-$default: #444;
-$linkDefault: #111;
+// Text
+$default: #444            !default;
+$linkDefault: #ff299c     !default;
 
-//* Color
-$colorLight: #ddd;
-$colorUltraLight: #f5f5f5;
+// Color
+$colorUltraDark: #000     !default;
+$colorDark: $default      !default;
+$colorLight: #ddd         !default;
+$colorUltraLight: #f5f5f5 !default;
