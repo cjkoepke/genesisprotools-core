@@ -9,13 +9,13 @@
  * @since      1.0.0
  */
 
-add_action( 'wp_enqueue_scripts', 'gpt_load_styles' );
+add_action( 'wp_enqueue_scripts', 'uno_load_styles' );
 /**
  * Load compiled theme styles.
  *
  * @since 1.0.0
  */
-function gpt_load_styles() {
+function uno_load_styles() {
 
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Rubik', array(), CHILD_THEME_VERSION );
 
