@@ -74,6 +74,7 @@ body {
 		width: 760px;
 
 		.full-width-content & {
+			float: none;
 			width: 100%;
 		}
 	}
@@ -86,4 +87,50 @@ body {
 		}
 	}
 
+}
+
+// Box sizing.
+html,
+input[type="search"] {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+// Float clearing.
+.author-box::before,
+.clearfix::before,
+.entry::before,
+.entry-content::before,
+.nav-primary::before,
+.nav-secondary::before,
+.pagination::before,
+.site-container::before,
+.site-footer::before,
+.site-inner::before,
+.widget::before,
+.wrap::before {
+	content: " ";
+	display: table;
+}
+
+.author-box::after,
+.clearfix::after,
+.entry::after,
+.entry-content::after,
+.nav-primary::after,
+.nav-secondary::after,
+.pagination::after,
+.site-container::after,
+.site-footer::after,
+.site-inner::after,
+.widget::after,
+.wrap::after {
+	clear: both;
+	content: " ";
+	display: table;
 }
